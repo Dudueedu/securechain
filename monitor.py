@@ -61,3 +61,10 @@ if __name__ == "__main__":
         f.write("documento ALTERADO")
     print("--- Verificando apos alteracao ---")
     verificar_integridade()
+    print("\n--- Monitoramento continuo (Ctrl+C para parar) ---")
+    try:
+        while True:
+            verificar_integridade()
+            time.sleep(30)
+    except KeyboardInterrupt:
+        print("Monitoramento encerrado.")

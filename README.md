@@ -86,3 +86,9 @@ cd backup && bash backup.sh
 - Eventos registrados em blockchain imutável
 - Backup criptografado com AES-256
 - Análise de vulnerabilidades com nmap e ss
+
+## Análise de Segurança
+- Porta 80 (Apache): risco médio — HTTP sem criptografia
+- Porta 631 (CUPS): risco baixo — restrito ao localhost
+- /etc/shadow: permissões corretas (640) — apenas root acessa
+- Avahi/mDNS: desabilitável se rede local não for necessária

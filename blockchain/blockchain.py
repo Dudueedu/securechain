@@ -55,6 +55,13 @@ def validar_chain():
         print(f"Blockchain valida. {len(chain)} blocos verificados com sucesso.")
     return len(erros) == 0
 
+def listar_eventos():
+    chain = carregar_chain()
+    print(f"\n=== Blockchain — {len(chain)} blocos ===")
+    for bloco in chain:
+        print(f"  #{bloco['id']} [{bloco['timestamp']}] {bloco['evento']}")
+    print()
+
 if __name__ == "__main__":
     registrar_evento("Sistema iniciado")
     validar_chain()

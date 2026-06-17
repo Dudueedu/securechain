@@ -43,6 +43,17 @@ def login(nome, senha):
         print("Senha incorreta.")
         return None
 
+def listar_usuarios():
+    usuarios = carregar_usuarios()
+    if not usuarios:
+        print("Nenhum usuário cadastrado.")
+        return
+    print("\n=== Usuários cadastrados ===")
+    for nome, dados in usuarios.items():
+        print(f"  - {nome} (perfil: {dados['perfil']})")
+    print()
+
 if __name__ == "__main__":
     cadastrar_usuario("admin", "Senha@123", "admin")
+    listar_usuarios()
     login("admin", "Senha@123")

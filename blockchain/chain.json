@@ -5,5 +5,33 @@
     "evento": "Sistema iniciado",
     "hash_anterior": "0000000000000000000000000000000000000000000000000000000000000000",
     "hash_atual": "0e73ab1dfe0ee76f88b3887060ecfcab0c79b4c405baa8e28efa4bb196674569"
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-06-17T18:31:01.646945",
+    "evento": "ALERTA: Arquivo alterado: teste.txt",
+    "hash_anterior": "0e73ab1dfe0ee76f88b3887060ecfcab0c79b4c405baa8e28efa4bb196674569",
+    "hash_atual": "8dc936be2b535d89192a44bafa3bb82c7bd87e2e7c2510b6530316220343b099"
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-06-17T18:43:25.517984",
+    "evento": "Relatorio de auditoria gerado: relatorio_20260617_184325.txt",
+    "hash_anterior": "8dc936be2b535d89192a44bafa3bb82c7bd87e2e7c2510b6530316220343b099",
+    "hash_atual": "94dc82c34500bec3517f5e4ddda6731f0a25dc1d11aec95a7c5bccd5f11d345d"
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-06-17T18:43:31.304996",
+    "evento": "Relatorio de auditoria gerado: relatorio_20260617_184331.txt",
+    "hash_anterior": "94dc82c34500bec3517f5e4ddda6731f0a25dc1d11aec95a7c5bccd5f11d345d",
+    "hash_atual": "9e5e4f12ab2ebc65086fe025dfab755c92460eb276379456f88bdc1c86637de7"
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-06-17T19:06:47.348717",
+    "evento": "Backup executado: backup_20260617_190647.tar.gz.enc (4.0K)",
+    "hash_anterior": "9e5e4f12ab2ebc65086fe025dfab755c92460eb276379456f88bdc1c86637de7",
+    "hash_atual": "508c2e40b24807c6368070127cc5a8bb3c7867886dc125a55c2ca49575e6babc"
   }
 ]

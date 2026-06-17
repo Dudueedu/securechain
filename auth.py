@@ -53,6 +53,17 @@ def listar_usuarios():
         print(f"  - {nome} (perfil: {dados['perfil']})")
     print()
 
+def remover_usuario(nome):
+    usuarios = carregar_usuarios()
+    if nome not in usuarios:
+        print("Usuário não encontrado.")
+        return
+    del usuarios[nome]
+    salvar_usuarios(usuarios)
+    from blockchain.blockchain import registrar_evento
+    registrar_evento(f"Usuário removido: {nome}")
+    print(f"Usuário '{nome}' removido com sucesso.")
+
 if __name__ == "__main__":
     cadastrar_usuario("admin", "Senha@123", "admin")
     listar_usuarios()
